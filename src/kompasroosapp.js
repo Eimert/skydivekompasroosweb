@@ -151,7 +151,7 @@ class KompasroosApp extends Component {
   render() {
     return (
       <MuiThemeProvider theme={theme}>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route path="/:language(de|en|fr|nl)"
 
